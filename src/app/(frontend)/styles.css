@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Custom Slider Styles */
+.swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.5);
+  opacity: 1;
+}
+
+.swiper-pagination-bullet-active {
+  background: #ef4444; /* Red-500 */
+}
+
+/* Transparent Header Styles */
+header {
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled {
+  background-color: rgba(245, 244, 244, 0.95); /* Gray-900 with opacity */
+  box-shadow: 0 4px 6px -1px rgba(245, 244, 244, 0.95), 0 2px 4px -1px rgba(245, 244, 244, 0.95);
+}
+
+/* Slide Animation */
+.swiper-slide-active .slide-content {
+  animation: fadeInUp 1s ease forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
