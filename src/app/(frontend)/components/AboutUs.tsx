@@ -15,7 +15,7 @@ export default function AboutUs({ aboutUs }: AboutUsProps) {
   const description = aboutUs?.description || "Dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia.";
   const buttonText = aboutUs?.buttonText || "About Us";
   const buttonLink = aboutUs?.buttonLink || "/about";
-  const imageSrc = aboutUs?.image?.url || "https://images.unsplash.com/photo-1581578731548-c64695cc6952?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1287&q=80";
+  const imageSrc = aboutUs?.image?.url || "https://kharismabajamandiri.vercel.app/_next/image?url=%2Fapi%2Fmedia%2Ffile%2FScreenshot%25202025-04-25%2520at%252016.59.18.png&w=3840&q=75";
   
   // Extract features from Payload data or use defaults
   const features = aboutUs?.features?.map(item => item.feature) || [
