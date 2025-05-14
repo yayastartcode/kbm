@@ -18,7 +18,7 @@ export default async function HomePage() {
   const services = await getServices();
 
   const brands = await getBrands();
-  const videos = await getVideos({ featured: true });
+  const videos = await getVideos({ limit:20, featured: true });
   const clientData = await getClients();
   const footer = await getFooter();
   
